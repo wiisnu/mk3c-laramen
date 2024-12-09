@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Styling for Header and Navbar */
+header {
+    background-color: #111;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Metal Mania', cursive;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    position: inherit;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d9534f;
+}
+
+section {
+    padding: 100px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.member-card {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #d9534f;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover img {
+    transform: scale(1.1);
+}
+
+.member-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #d9534f;
+}
+
+.member-card p {
+    margin-bottom: 15px;
+}
+
+.member-card button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.member-card button:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+.member-card button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Responsif member-card di mobile */
+    .member-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+    
+    section {
+        padding: 70px 20px 20px;
+    }
+
+    .member-card {
+        padding: 20px;
+    }
+
+    .member-card h3 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8em;
+    }
+}
